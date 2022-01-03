@@ -53,16 +53,7 @@ header:before{
     opacity: 1;
     box-shadow: 5px 0 10px rgba(0, 0, 0,.6);
 }
-/*
-#saludo{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    
-    
-}
-*/
+
 #saludo{
     position: relative;
     height: 78px;
@@ -71,47 +62,7 @@ header:before{
 
 
 /* *****************      MENU     **************** */
-/*
-.menu{
-    flex-grow: 1;
-    flex-basis: 28%;
-    height: 100%;
-    align-items: center;
-    padding-right: 31%;
-padding-left: 31%;
-    *background: rgba(107, 238, 227, 0.2);
-    
-}
-.menu ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-.menu a{
-    color: white;
-    padding: 10px;
-    font-weight: bolder;
-    font-size: 19px;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: 700ms;
-    transition: background-size .3s;
-}
 
-.menu a:hover, a:focus{
-    background-size: 100% 2px;
-    background-color: linear-gradient(90deg,#2b6446 ,#0dc4be);
-    color:rgb(1, 252, 210);
-}
-.menu a:active{
-    color: rgb(101, 218, 196)
-}
-*/
 #saludo{
     display: flex;
     align-items: center;
@@ -488,6 +439,7 @@ input[type="submit"]:active{
 /***********FIN DEL TOOL-TIPS*/
 /******************** PROJECTS ***************************/
 #content-2{
+    margin-bottom: -2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -499,7 +451,7 @@ input[type="submit"]:active{
     padding-top: 30px;
     font-size: 28px;
     color: #1FD1AA;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     padding-top: 50px;
 }
 #projects{
@@ -526,7 +478,7 @@ input[type="submit"]:active{
     position: relative;
     border-radius: 7px;
     *overflow: hidden;
-    height: 380px;
+    height: 340px;
     width: 290px;
     width: 100%;
     box-shadow: 0px 12px 20px rgba(0, 0, 0,0.5);
@@ -541,7 +493,7 @@ input[type="submit"]:active{
     transform: scale(1.01,1.01);
 }
 .capa{
-    line-height: 380px;
+    line-height: 340px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -574,14 +526,14 @@ input[type="submit"]:active{
     color: white;
 }
 .project-info h1{
-    margin: 15px 0px;
+    margin: 18px 0px;
     font-size: 19px;
     color: white;
 }
 .project-info h2{
     font-weight: 400;
-    font-size: 15px;
-    margin: 15px 20px;
+    font-size: 18px;
+    margin: 18px 20px;
 }
 .project-info span{
     font-size: 13px;
@@ -591,7 +543,7 @@ input[type="submit"]:active{
     font-weight: bold;
 }
 .project-info input{
-    margin: 15px 0px;
+    margin: 19px 0px;
 }
 /*********************END PROJECTS *************************/
 /********************* CONTACT *****************************/
@@ -633,19 +585,20 @@ input[type="submit"]:active{
 
 /********************* END CONTACT *****************************/
 #contact{
-    padding-top: 50px;
+    padding-top: 45px;
     background: #17191D;
-    height: 340px;
+    height: 350px;
 }
 #contact h1{
     text-align: center;
     padding-top: 30px;
     font-size: 28px;
     color: #1FD1AA;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 /* *****************      PIE DE PAGINA     **************** */
 footer{
+    margin-top: -2px;
     font-weight: lighter;
     font-size: 15px;
     font-family: "SF";
@@ -665,7 +618,81 @@ footer p{
 
 /*MEDIA*/
 
+@media screen and (max-width:1400px){
+
+    .imgMuestra{
+        height: 300px;
+        width: 250px;
+        width:100%
+    }
+}
+@media screen and (max-width:1200px){
+    .img{
+        height: 250px;
+        width: 250px;
+        border-radius: 1000px;
+    }
+    .content-about h1{
+        font-size: 30px;
+
+    }
+    .content-about h2{
+        font-size: 33px ;
+    }
+    .content-about{
+        margin-left: 100px;
+    }
+    .imgMuestra{
+        height: 250px;
+        width: 200px;
+        width:100%
+    }
+    .project-info h2{
+        font-weight: 300;
+        font-size: 15px;
+        margin: 18px 5px;
+    }
+}
+
 @media screen and (max-width:952px){
+    .img{
+        height: 200px;
+        width: 200px;
+        border-radius: 1000px;
+    }
+    .content-about h1{
+        font-size: 26px;
+
+    }
+    .content-about h2{
+        font-size: 22px ;
+    }
+    .skill-order{
+        padding-left: 10%;
+        padding-right: 10%;
+       }
+
+       .project-info h1{
+        margin: 18px 0px;
+        font-size: 16px;
+      
+    }
+    .project-info h2{
+       display: none;
+    }
+    .project-info span{
+        font-size: 11px;
+
+    }
+    .networks{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .imgMuestra{
+        height: 200px;
+        width: 150px;
+        width:100%
+    }
     .logo{
         font-size: 30px;
         padding-left: 35px;
@@ -673,8 +700,31 @@ footer p{
     .menu-items li a {
         font-size: 16px;
     }
+
 }
-@media screen and (max-width:850px){
+@media screen and (max-width:860px){
+    .img{
+        height: 180px;
+        width: 180px;
+        border-radius: 1000px;
+    }
+    .content-about h1{
+        font-size: 24px;
+
+    }
+    .content-about h2{
+        font-size: 20px ;
+    }
+    .content-about{
+        margin-left: 80px;
+    }
+    #projects{
+        width: 80%;
+    }
+    .networks{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
     .menu{
         position: fixed;
         z-index: 9999;
@@ -716,5 +766,45 @@ footer p{
     .logo{
         font-size: 28px;
         padding-left: 35px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #txt h1{
+       font-size: 24px;
+    }
+    #txt h3{
+  font-size: 13px;
+    }
+    #projects{
+        width: 95%;
+    }
+    .project{
+        flex-basis:45%;
+    }
+    .skill-order{
+        padding-left: 3%;
+        padding-right: 3%;
+       }
+    .content-about{
+        margin-left: 20px;
+    }
+    .content-about h1{
+        display: none;
+    }
+    .content-about span{
+        display: none;
+     }
+
+    .networks{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .skill-order li {
+      flex-basis: 28%;
+        padding-top: 9px;
+        padding-bottom: 7px ; 
+        margin-bottom: 34px;
+
     }
 }
