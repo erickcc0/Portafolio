@@ -1,3 +1,3 @@
-# Portafolio
+# Portafolio Erick Cornejo
 
-##Mi primer portafolio
+## Mi primer portafolio
